@@ -1,0 +1,81 @@
+{
+	"example": [
+		{
+			"idarea" : 1,
+			"personList": [
+				{
+					"idperson" : 1,
+					"gender" : "male"
+				},
+				{
+					"idperson" : 2,
+					"gender" : "female"
+				},
+				{
+					"idperson" : 3,
+					"gender" : "male"
+				}]
+		},
+		{
+			"idarea" : 2,
+			"personList": [
+				{
+					"idperson" : 14,
+					"gender" : "male"
+				},
+				{
+					"idperson" : 55,
+					"gender" : "female"
+				},
+				{
+					"idperson" : 16,
+					"gender" : "male"
+				},
+				{
+					"idperson" : 17,
+					"gender" : "male"
+				},
+				{
+					"idperson" : 18,
+					"gender" : "male"
+				},
+				{
+					"idperson" : 19,
+					"gender" : "male"
+				}
+				
+				]
+		},
+		{
+			"idarea" : 3,
+			"personList": [
+				{
+					"idperson" : 2,
+					"gender" : "male"
+				},
+				{
+					"idperson" : 28,
+					"gender" : "female"
+				},				{
+					"idperson" : 29,
+					"gender" : "female"
+				},				{
+					"idperson" : 30,
+					"gender" : "female"
+				},				{
+					"idperson" : 31,
+					"gender" : "female"
+				},				{
+					"idperson" : 32,
+					"gender" : "female"
+				},				{
+					"idperson" : 33,
+					"gender" : "female"
+				},
+				{
+					"idperson" : 34,
+					"gender" : "male"
+				}]
+		}	
+	]
+}
