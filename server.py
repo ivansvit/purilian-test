@@ -27,7 +27,7 @@ def index():
 def count_areas_persons(json_data):
     data = json_data
     all_areas_list = data['example']
-    sum_idareas = [key['idarea'] for key in all_areas_list if key.get('idarea')]
+    sum_idareas = len([key['idarea'] for key in all_areas_list if key.get('idarea')])
     all_persons_list = [item['personList'] for item in data['example']]
     count_person = 0
     total_male = 0
@@ -40,10 +40,16 @@ def count_areas_persons(json_data):
             elif persons[i]['gender'] == 'female':
                 total_female += 1
 
-    print(f"We support {len(sum_idareas)} areas.")
+    # Calculate average men and women for area
+    avg_men = round(total_male / sum_idareas, 2)
+    avg_women = round(total_female / sum_idareas, 2)
+
+    print(f"We support {sum_idareas} areas.")
     print(f"In total we have {count_person} persons in the database.")
     print(f"{total_male} of them are male.")
     print(f"{total_female} of them are female.")
+    print(f"{avg_men} men on average per area.")
+    print(f"{avg_women} women on average per area.")
 
 # --------------------------------- OSC ------------------------------------
 # Start the system.
